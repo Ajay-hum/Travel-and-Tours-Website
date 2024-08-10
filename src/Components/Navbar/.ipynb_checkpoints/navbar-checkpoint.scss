@@ -1,0 +1,208 @@
+:root {
+    --primaryColor: hsl(199, 100%, 33%);
+    --secondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 41%, 36%);
+    --whiteColorDemi: hsl(240, 42%, 93%);
+    --greyText: rgb(220, 210, 210);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+    --greyBg: rgb(240, 240, 240); /* Added value for greyBg */
+}
+
+.navBarSection {
+    /* This is style for the header in the Navbar section */
+    .header {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+        width: 100%;
+        padding: 1rem;
+        z-index: 1000;
+
+        .logoDiv {
+            /* This style is for the "BONVOYAGE" */
+            .logo {
+                color: black;
+                font-weight: 500;
+                cursor: pointer;
+                align-items: center;
+                justify-items: center;
+
+                /* This is for the "TRAVEL" "ICON" */
+                .icon {
+                    font-size: 33px;
+                    color: var(--primaryColor);
+                    margin-right: 10px;
+                    border: 2px solid transparent;
+                    
+                    &:hover{
+                        border: 2px var(--blackColor);
+                        color: var(--blackColor);
+                        background: var(--whiteColor);
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            //This is style for the Navbar itself ('Container') 
+            .navBar{
+                position: absolute; //formerly absolute
+                background: var(--greyBg);
+                height: max-content;
+                width: 100%; 
+                top: 1rem; //formerly (0)
+                left: -100%;
+                border-radius: 3rem; //added this
+                padding: .5rem;
+                transform: .5s ease;
+                z-index: 1000;
+                box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
+
+                //This is style for the arrangements of the texts in the Navbar
+                .navLists{
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%;
+                    margin: auto;
+
+                    //This is the style for individual item in the Navbar
+                    .navItem{
+                        padding: 1rem 0;//On wide screen padding should be :0 1rem
+
+                        //This is style for the texts in the Navbar
+                        .navLink {
+                            color: rgb(14, 37, 163);//Color for the texts in the Navbar
+                            font-size: .9rem;
+                            font-weight: 600;
+                            &:hover {
+                                color: var(--secondaryColor);
+                            }
+                        }
+                    }
+
+                    .headerBtns{
+                        flex-direction: column;
+                        .btn{
+                            margin-top: 1rem;//On the wide screen it should also be 1rem
+
+                            a{
+                                font-weight: 600;
+                                color: white;
+                            }
+
+                            &:hover{
+                                background: var(--secondaryColor);
+                            }
+                        }
+
+                        /*.loginBtn{
+                            background: none;
+                            border: 1px solid var(--primaryColor);
+
+                            a{
+                                color: var(--primaryColor);
+                            }
+                            &:hover{
+                                background: var(--HoverColor);
+                            }
+                        }*/
+                    }
+                }
+                
+                 //This is for the (X in a circle button to close the open Navbar)
+                .closeNavbar {
+                    position: absolute;
+                    top: 1rem;
+                    right: 1.5rem;
+                    color: var(--primaryColor);
+                    &:hover .icon{
+                        color: var(--secondaryColor);
+                    } 
+                } 
+            }
+
+            .activeNavbar{
+                left: 0;
+            }
+        }
+
+        //This is for the (6 dots for at the top left of the header to open the Navbar)
+        .toggleNavbar{
+            .icon{
+                font-size: 30px;
+                color: black;
+            }
+            &:hover.icon{
+                color: var(--blackColor);
+            }
+        }
+    }
+
+    //This is the style for the header background color when it is Active
+    .activeHeader{
+        background: var(--greyText);
+        box-shadow: 0 2px 8px rgba(66, 53, 53, 0.45);
+
+    }
+}
+
+//Media Queries====================>
+@media screen and (min-width: 769px) {
+    .navBarSection{
+
+        .toggleNavbar, .closeNavbar{
+            display: none;
+        }
+    
+        .header{
+            padding: 1.5rem 2rem;
+            .navBar{
+                .navLists{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row;
+
+                    .navItem{
+                        .navLink{
+                            color: black;
+                            padding: 0 .45rem;
+                            font-weight: 600;
+                            font-size: .9rem;
+                            &:hover{
+                                color: var(--primaryColor);
+                            }
+                        }
+                    }
+
+                    .btn{
+                        margin-left: 1rem;
+
+                        a{
+                            color: var(--whiteColor);
+                            font-weight: 500;
+                        }
+
+                        &:hover{
+                            background: var(--secondaryColor);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header{
+        padding: 1rem 8.5rem !important;
+    }
+}
+

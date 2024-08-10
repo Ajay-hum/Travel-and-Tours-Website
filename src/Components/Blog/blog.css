@@ -1,0 +1,73 @@
+:root {
+  --primaryColor: hsl(199, 100%, 33%);
+  --secondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 41%, 36%);
+  --whiteColorDemi: hsl(240, 42%, 93%);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --greyBg: rgb(240, 240, 240); /* Added value for greyBg */
+  --greyText: rgb(220, 210, 210);
+  --box-shadow: 0 2px 8px rgba(66, 53, 53, 0.45);
+}
+
+.blog .mainContainer {
+  gap: 3.5rem;
+  padding: 1rem 0;
+}
+.blog .mainContainer .singlePost {
+  gap: 1rem;
+}
+.blog .mainContainer .singlePost .imgDiv {
+  height: 280px;
+  width: 100%;
+  border-radius: 1rem;
+  border: 4px solid var(--primaryColor);
+  box-shadow: 0 2px 8px rgba(66, 53, 53, 0.45);
+  overflow: hidden;
+}
+.blog .mainContainer .singlePost .imgDiv:hover img {
+  transform: scale(1.1);
+  transition: 3s ease;
+}
+.blog .mainContainer .singlePost .imgDiv img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog .mainContainer .singlePost .postDetails h3 {
+  color: black;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.blog .mainContainer .singlePost .postDetails p {
+  font-size: 15px;
+  padding-bottom: 1px;
+}
+.blog .mainContainer .singlePost a {
+  font-size: 0.8rem;
+  color: white;
+  bottom: 10px;
+  padding: 0.3rem;
+  background: var(--primaryColor);
+  border-radius: 1rem;
+  font-weight: 600;
+  width: -moz-max-content;
+  width: max-content;
+}
+.blog .mainContainer .singlePost a:hover {
+  color: var(--secondaryColor);
+  font-weight: 600;
+}
+.blog .mainContainer .singlePost a:hover .icon {
+  transform: translateX(10px);
+}
+
+@media screen and (min-width: 884px) {
+  .blog .mainContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}/*# sourceMappingURL=blog.css.map */

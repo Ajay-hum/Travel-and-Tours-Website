@@ -1,0 +1,103 @@
+:root {
+  --primaryColor: hsl(199, 100%, 33%);
+  --secondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 41%, 36%);
+  --whiteColorDemi: hsl(240, 42%, 93%);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --greyBg: rgb(240, 240, 240); /* Added value for greyBg */
+  --greyText: rgb(220, 210, 210);
+  --box-shadow: 0 2px 8px rgba(66, 53, 53, 0.45);
+}
+
+.offer .secContainer .mainContent {
+  gap: 1rem;
+}
+.offer .secContainer .mainContent .singleOffers {
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(66, 53, 53, 0.45);
+}
+.offer .secContainer .mainContent .singleOffers .icon {
+  font-size: 20px;
+  color: rgb(73, 65, 65);
+}
+.offer .secContainer .mainContent .singleOffers .small {
+  font-weight: 500;
+  color: var(--blackColor);
+}
+.offer .secContainer .mainContent .singleOffers .destImage {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.offer .secContainer .mainContent .singleOffers .destImage img {
+  height: 100%;
+}
+.offer .secContainer .mainContent .singleOffers .destImage .discount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  font-size: 10px;
+  border-radius: 3rem;
+  font-weight: 500;
+}
+.offer .secContainer .mainContent .singleOffers .offerBody {
+  padding: 1rem;
+}
+.offer .secContainer .mainContent .singleOffers .offerBody .price {
+  justify-content: space-between;
+}
+.offer .secContainer .mainContent .singleOffers .offerBody .price h4 {
+  color: black;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.offer .secContainer .mainContent .singleOffers .offerBody .price .status {
+  padding: 5px 10px;
+  color: var(--primaryColor);
+  background: var(--greyBg);
+  border-radius: 3rem;
+  font-size: 10px;
+  font-weight: 600;
+}
+.offer .secContainer .mainContent .singleOffers .offerBody .amenities {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 1rem 0;
+  gap: 0.5rem;
+}
+.offer .secContainer .mainContent .singleOffers .offerBody .amenities .singleAmenity {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: var(--greyBg);
+  gap: 0.5rem;
+}
+.offer .secContainer .mainContent .singleOffers .offerBody .btn {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  padding: 0.6rem;
+  color: var(--whiteColor);
+  font-weight: 600;
+  gap: 0.5rem;
+  /*.icon{
+      color: var(--whiteColor);
+  }*/
+}
+.offer .secContainer .mainContent .singleOffers:hover {
+  transform: translateY(-7px);
+  background: rgb(136, 242, 236);
+}/*# sourceMappingURL=offers.css.map */

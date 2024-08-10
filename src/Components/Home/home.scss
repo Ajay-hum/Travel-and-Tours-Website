@@ -1,0 +1,201 @@
+:root {
+    --primaryColor: hsl(199, 100%, 33%);
+    --secondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 41%, 36%);
+    --whiteColorDemi: hsl(240, 42%, 93%);
+    --greyText: rgb(220, 210, 210);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+    --greyBg: rgb(240, 240, 240); /* Added value for greyBg */
+}
+
+.home {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+
+    .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgb(140, 175, 205);
+        top: 0;
+        bottom: 0;
+        mix-blend-mode: hard-light;
+        z-index: 1;
+    }
+
+    video {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        object-fit: cover;
+    }
+
+    .secContainer {
+        z-index: 100;
+        .homeText {
+            text-align: center;
+
+            .title {
+                font-size: 2.0rem;
+                color: black;
+                position: relative;
+                line-height: 2.5rem;
+
+                .subTitle {
+                    position: relative;
+                    opacity: .9;
+                    font-size: 16px;
+                    text-align: center;
+                    color: black;
+                    padding: 1rem 0;
+                    max-width: auto;
+                    font-weight: 300;
+                }
+
+                //This is style for the "Book Now" button
+                .btn {
+                    padding: .6rem 1.5rem;
+                }
+            }
+        }
+
+        //This is style for the fill box container
+        .homeCard {
+            width: 80%;
+            border-radius: 1rem;
+            padding: 2rem;
+            background: var(--whiteColor);
+            position: absolute;
+            gap: 1rem;
+            justify-content: center;
+            bottom: -35%;
+            transform: translate(-50%);
+            left: 50%;
+            box-shadow: 0 2px 8px rgba(122, 105, 105, 0.45); 
+
+            .locationDiv, .distDiv, .priceDiv{
+                width: 100%;
+
+                //This is style for the text description(e.g; Search your destination)
+                label{
+                    display: block;
+                    color: var(--blackColor);
+                    font-weight: 500;
+                    font-size: 13px;
+                    padding-bottom: .4rem;
+                }
+
+                //This is style for the Text input field
+                input{
+                    background: var(--greyText);
+                    border-radius: 0.5rem;
+                    outline: none;
+                    width: 100%;
+                    font-size: 500;
+                    &::placeholder{
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            //This is style for the "Search" button
+            .btn{
+                color: white;
+                &:hover{
+                    background: var(--secondaryColor);
+                }
+            }
+        }
+    }
+}
+
+//Media Queries=================>
+@media screen and (min-width: 480px) {
+    .home{
+        .secContainer{
+            .homeCard{
+                bottom: -100px;
+                width: 90%;
+                grid-template-columns: repeat(2, 1fr);
+                .btn{
+                    transform: translateY(15px);
+                }
+            }
+        }
+    }
+}
+
+//Media Queries=================>
+@media screen and (min-width: 556px) {
+    .home{
+        .secContainer{
+            .homeText{
+                .title{
+                    font-size: 2.5rem;
+                }
+                .subTitle{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .home{
+        .secContainer{
+            .homeCard{
+                bottom: -10%;
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 720px) {
+    .home{
+        .secContainer{
+            .homeText{
+                padding: 1rem 10rem;
+
+                .title{
+                    font-size: 2.5rem;
+                    margin: auto;
+                    line-height: 2.5rem;
+                }
+
+                .subTitle{
+                    width: 70;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .home{
+        .secContainer{
+            .homeText{
+                .subTitle{
+                    font-size: 20px;
+                }
+            }
+
+            .homeCard{
+                width: 70;
+            }
+        }
+    }
+}

@@ -1,0 +1,207 @@
+:root {
+  --primaryColor: hsl(199, 100%, 33%);
+  --secondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(203, 38%, 8%);
+  --textColor: hsl(240, 41%, 36%);
+  --whiteColorDemi: hsl(240, 42%, 93%);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+  --greyBg: rgb(240, 240, 240); /* Added value for greyBg */
+  --greyText: rgb(220, 210, 210);
+}
+
+.main {
+  padding-top: 15rem;
+}
+.main .secContainer secHeader {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1;
+}
+.main .secContainer secHeader .textDiv .secTitle {
+  color: var(--blackColor);
+  line-height: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.main .secContainer secHeader .textDiv p {
+  font-size: 13px;
+  color: var(--textColor);
+  font-weight: 500;
+}
+.main .secContainer .iconsDiv {
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.main .secContainer .iconsDiv .icon {
+  padding: 0.5rem;
+  background: var(--greyText);
+  border-radius: 20%;
+  font-size: 2.5rem;
+}
+.main .secContainer .iconsDiv .icon:hover {
+  background: var(--blackColor);
+  -moz-column-rule: var(--whiteColor);
+       column-rule: var(--whiteColor);
+}
+.main .secContainer .iconsDiv .leftIcon {
+  background: var(--blackColor);
+  color: var(--whiteColor);
+}
+.main .secContainer .iconsDiv .leftIcon:hover {
+  background: var(--greyText);
+  color: var(--blackColor);
+}
+.main .secContainer .mainContent {
+  padding: 2rem 0;
+  gap: 1rem;
+}
+.main .secContainer .mainContent .singleDestination {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(66, 53, 53, 0.45);
+}
+.main .secContainer .mainContent .singleDestination .destImage {
+  height: 250px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.main .secContainer .mainContent .singleDestination .destImage img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .secContainer .mainContent .singleDestination .destImage .overlayInfo {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.846), rgba(0, 0, 0, 0.759));
+  width: 100%;
+  bottom: 0;
+  height: 0;
+  overflow: hidden;
+}
+.main .secContainer .mainContent .singleDestination .destImage .overlayInfo h3 {
+  color: var(--whiteColor);
+  font-weight: 600;
+}
+.main .secContainer .mainContent .singleDestination .destImage .overlayInfo p {
+  color: white;
+  opacity: 0.7;
+  font-size: 13px;
+}
+.main .secContainer .mainContent .singleDestination .destImage .overlayInfo p .con {
+  margin-right: 0.5rem;
+  color: var(--primaryColor);
+  font-size: 20px;
+}
+.main .secContainer .mainContent .singleDestination .destImage .overlayInfo a {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 0.5rem;
+  background: var(--primaryColor);
+  font-size: 1rem;
+  border-radius: 1rem;
+  color: var(--whiteColor);
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+}
+.main .secContainer .mainContent .singleDestination .destImage .overlayInfo a:hover {
+  background: var(--blackColor);
+  border: 1px solid var(--primaryColor);
+  color: var(--primaryColor);
+}
+.main .secContainer .mainContent .singleDestination .destFooter {
+  padding: 1rem;
+}
+.main .secContainer .mainContent .singleDestination .destFooter .number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--blackColor);
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  /*&::after{
+      content: '';
+      position: absolute;
+      background: var(--primaryColor);
+      top: 45%;
+      right: -150;
+      height: 5px;
+      width: 45px;
+      border-radius: 1rem;
+  }*/
+}
+.main .secContainer .mainContent .singleDestination .destFooter .destText {
+  justify-content: space-between;
+}
+.main .secContainer .mainContent .singleDestination .destFooter .destText h6 {
+  font-size: 14px;
+  color: var(--blackColor);
+}
+.main .secContainer .mainContent .singleDestination .destFooter .destText .flex {
+  font-size: 16px;
+  font-weight: 600;
+  align-items: flex-start;
+  transform: translateY(5px);
+}
+.main .secContainer .mainContent .singleDestination .destFooter .destText .flex .icon {
+  color: var(--primaryColor);
+}
+.main .secContainer .mainContent .singleDestination .destFooter p {
+  font-size: 13px;
+  color: black;
+}
+.main .secContainer .mainContent .singleDestination:hover .overlayInfo {
+  overflow: visible;
+  padding: 1rem 1.5rem;
+  height: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .main {
+    padding-top: 10rem;
+  }
+}
+@media screen and (min-width: 556px) {
+  .main .secContainer .secHeader {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main .secContainer .secHeader .textDiv {
+    text-align: start;
+    max-width: 70%;
+  }
+  .main .secContainer .secHeader .iconsDiv {
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 720px) {
+  .main {
+    padding-top: 8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main {
+    padding-top: 10rem;
+  }
+  .main .secContainer .secHeader .textDiv .secTitle {
+    font-size: 2.2rem;
+  }
+  .main .secContainer .secHeader .textDiv p {
+    font-size: 15px;
+  }
+  .main .secContainer .mainContent {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}/*# sourceMappingURL=main.css.map */

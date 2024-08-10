@@ -1,0 +1,113 @@
+:root {
+    --primaryColor: hsl(199, 100%, 33%);
+    --secondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 41%, 36%);
+    --whiteColorDemi: hsl(240, 42%, 93%);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+    --greyBg: rgb(240, 240, 240); /* Added value for greyBg */
+    --greyText: rgb(220, 210, 210);
+    --box-shadow: 0 2px 8px rgba(66, 53, 53, 0.45);
+}
+
+.footer{
+    background: var(--greyText);
+    padding: 2rem 0;
+
+    .secContainer{
+        gap: 1.5rem;
+        text-align: center;
+        .logoDiv{
+            .footerLogo{
+                padding-bottom: .5rem;
+                .logo{
+                    color: black;
+                    font-weight: 500;
+                    cursor: pointer;
+                    align-items: center;
+                    //justify-content: center;
+    
+                    .icon{
+                        font-size: 30px;
+                        color: var(--primaryColor);
+                        margin-right: .5rem;
+
+                        &:hover{
+                            color: var(--secondaryColor);
+                        }
+                    }
+                }
+            }
+    
+            .socials{
+                gap: .5rem;
+                margin: auto;
+                justify-content: center;
+                padding-top: .5rem;;
+    
+                .icon{
+                    color: black;
+                    font-size: 25px;
+                    background: var(--whiteColor);
+                    border-radius: .2rem;
+                    padding: 3px;
+                    &:hover{
+                        background: var(--secondaryColor);
+                    }
+                }
+            }
+        }
+
+        .footerLinks{
+            display: grid;
+            row-gap: .2rem;
+
+            .linkTitle{
+                padding-bottom: .5rem;
+                color: var(--blackColor);
+                font-weight: 700;
+            }
+
+            li{
+                &hover{
+                    transform: translateX(10px);
+                }
+
+                a{
+                    color: var(--textColor);
+
+                    &:hover{
+                        color: var(--secondaryColor);
+                    }
+                }
+            }
+
+            .phone, .E-mail{
+                color: var(--primaryColor);
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+//media Queries=====================>
+@media screen and (min-width: 640px) {
+    .footer{
+        .secContainer{
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .footer{
+        .secContainer{
+            padding: 2rem;
+        }
+    }
+}
