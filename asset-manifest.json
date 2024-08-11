@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Travel%20and%20Tours%20website/static/css/main.9f598f87.css",
+    "main.js": "/Travel%20and%20Tours%20website/static/js/main.59c3c81e.js",
+    "static/media/video.mp4": "/Travel%20and%20Tours%20website/static/media/video.614e06fd461fbfa1053d.mp4",
+    "static/media/img (11).jpg": "/Travel%20and%20Tours%20website/static/media/img (11).e273e31d823922f15df4.jpg",
+    "static/media/img (3).jpg": "/Travel%20and%20Tours%20website/static/media/img (3).04398da0d30dbeaffa85.jpg",
+    "static/media/img (2).jpg": "/Travel%20and%20Tours%20website/static/media/img (2).9b6f57802030c7427bff.jpg",
+    "static/media/img (12).jpg": "/Travel%20and%20Tours%20website/static/media/img (12).8b24bcefcee8ae811846.jpg",
+    "static/media/img (8).jpg": "/Travel%20and%20Tours%20website/static/media/img (8).7e7a7aace3abd3b93e24.jpg",
+    "static/media/img_1.jpg": "/Travel%20and%20Tours%20website/static/media/img_1.1bb5c1a1f8f3b33d748e.jpg",
+    "static/media/img (9).jpg": "/Travel%20and%20Tours%20website/static/media/img (9).9553228813cdee5134df.jpg",
+    "static/media/img_3.jpg": "/Travel%20and%20Tours%20website/static/media/img_3.b685552e80903ace05b5.jpg",
+    "static/media/img (6).jpg": "/Travel%20and%20Tours%20website/static/media/img (6).336830ad7765aeb9a1d9.jpg",
+    "static/media/img_6.jpg": "/Travel%20and%20Tours%20website/static/media/img_6.95059bc1de8056884bf4.jpg",
+    "static/media/img (5).jpg": "/Travel%20and%20Tours%20website/static/media/img (5).950c4ca547656ddb4a87.jpg",
+    "static/media/img (10).jpg": "/Travel%20and%20Tours%20website/static/media/img (10).a16cf69207d5489fe508.jpg",
+    "static/media/img (7).jpg": "/Travel%20and%20Tours%20website/static/media/img (7).75870b9a9243d892e0eb.jpg",
+    "static/media/img (4).jpg": "/Travel%20and%20Tours%20website/static/media/img (4).3b38370733a603b4e80b.jpg",
+    "static/media/img (1).jpg": "/Travel%20and%20Tours%20website/static/media/img (1).76178e26fef32e84ca6a.jpg",
+    "static/media/img_15.jpg": "/Travel%20and%20Tours%20website/static/media/img_15.f25314e5d5e79bc2398e.jpg",
+    "index.html": "/Travel%20and%20Tours%20website/index.html",
+    "main.9f598f87.css.map": "/Travel%20and%20Tours%20website/static/css/main.9f598f87.css.map",
+    "main.59c3c81e.js.map": "/Travel%20and%20Tours%20website/static/js/main.59c3c81e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f598f87.css",
+    "static/js/main.59c3c81e.js"
+  ]
+}
