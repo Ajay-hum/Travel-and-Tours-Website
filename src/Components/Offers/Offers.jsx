@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './offers.css'
 import { MdKingBed, MdBathtub, MdLocationOn } from 'react-icons/md'
 import { CgGym  } from 'react-icons/cg'
 import { BsArrowRightShort } from 'react-icons/bs'
 import { FaKitchenSet } from 'react-icons/fa6'
 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 //Importing images=========>
 import img10 from '../../Assets/img (10).jpg'
@@ -40,12 +42,17 @@ const Offs = [
 ];
 
 const Offers = () => {
+
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  }, [])
+
   return (
     <section className='offer container section'>
       <div className="secContainer">
-        <div className="secIntro">
+        <div data-aos="fade-right" data-aos-duration="2000" className="secIntro">
           <h1 className="secTitle">
-          🏡 Special Offers 🌟
+          🏡 Exclusive Offers 🌟
           </h1>
           <p>
           Enjoy 20% off on comfortable, well-structured homes, exclusively at <h4>BonVoyage.</h4> 
@@ -53,7 +60,7 @@ const Offers = () => {
           </p>
         </div>
 
-        <div className="mainContent grid">
+        <div data-aos="fade-up" data-aos-duration="2500" className="mainContent grid">
 
           {
             Offs.map(({ id, imgSrc, destTitle, location, price }) =>{

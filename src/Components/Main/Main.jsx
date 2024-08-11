@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './main.css'
 import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs'
 import { FaGripLinesVertical } from 'react-icons/fa'
 import { MdLocationOn } from 'react-icons/md'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 //Here I will import the images===========>//
 import img4 from '../../Assets/img (4).jpg'
@@ -10,9 +13,7 @@ import img1 from '../../Assets/img (1).jpg'
 import img2 from '../../Assets/img (2).jpg'
 import img3 from '../../Assets/img (3).jpg'
 
-/*Here Am going to use a high order array to display all the destinations 
-using Map. To do so I need to list all the destinations in one array "Data" 
-and later I shall call each destination by index id*/
+/*Using High order array to list destinations to be used at once */
 
 const Data = [
   {
@@ -54,12 +55,17 @@ const Data = [
 
 
 const Main = () => {
+
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  }, [])
+
   return (
     <section className='main section container'>
       <div className="secContainer">
 
         <div className="secHeader flex">
-          <div className="textDiv">
+          <div data-aos="fade-right" data-aos-duration="2000" className="textDiv">
             <h2 className="secTitle">
               🌍 Explore the Most Visited Destinations! ✨
             </h2>
@@ -71,12 +77,12 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="iconsDiv flex">
+        <div data-aos="fade-right" data-aos-duration="2500" className="iconsDiv flex">
           <BsArrowLeftShort className='icon leftIcon' />
           <BsArrowRightShort className='icon' />
         </div>
 
-        <div className="mainContent grid">
+        <div data-aos="fade-up" data-aos-duration="3000" className="mainContent grid">
           {
             Data.map(({id, imgSrc, destTitle, location, grade, writeUp}) => {
               return (

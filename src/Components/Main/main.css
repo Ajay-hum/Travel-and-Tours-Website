@@ -191,6 +191,11 @@
     padding-top: 8rem;
   }
 }
+@media screen and (min-width: 884px) {
+  .main .mainContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media screen and (min-width: 1024px) {
   .main {
     padding-top: 10rem;

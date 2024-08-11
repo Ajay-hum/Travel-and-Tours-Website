@@ -53,15 +53,15 @@ const Navbar = () => {
                     </li>
 
                     <li className="navItem">
-                        <a href='#' className='navLink'>Resources</a>
-                    </li>
-
-                    <li className="navItem">
-                        <a href='#' className='navLink'>Contacts</a>
+                        <a href='#' className='navLink'>About</a>
                     </li>
 
                     <li className="navItem">
                         <a href='#' className='navLink'>Blog</a>
+                    </li>
+
+                    <li className="navItem">
+                        <a href='#' className='navLink'>Contacts</a>
                     </li>
 
                     <div className="headerBtns flex">

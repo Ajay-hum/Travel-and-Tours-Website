@@ -90,7 +90,7 @@
 }
 .home .secContainer .homeCard .locationDiv input, .home .secContainer .homeCard .distDiv input, .home .secContainer .homeCard .priceDiv input {
   background: var(--greyText);
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   outline: none;
   width: 100%;
   font-size: 500;
