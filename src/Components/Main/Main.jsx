@@ -114,7 +114,6 @@ const Main = () => {
                       </h6>
                       <span className='flex'>
                         <span className='slash'>
-                          {/*<BsDot className='icon'/>*/}
                           <FaGripLinesVertical className='icon' />
                         </span>
                         BonVoyage.

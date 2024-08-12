@@ -29,7 +29,7 @@ const Home = () => {
             </p>
 
             <button data-aos="fade-up" data-aos-duration="3000" className="btn">
-                <a href='#'>Find your Destination</a>
+                <a href="#">Find your Destination</a>
             </button>
 
         </div>

@@ -65,9 +65,6 @@ const Navbar = () => {
                     </li>
 
                     <div className="headerBtns flex">
-                        {/*<button className='btn loginBtn'>
-                            <a href='#'>Login</a>
-                        </button>*/}
                         <button className='btn'>
                             <a href='#'>Book Now</a>
                         </button>

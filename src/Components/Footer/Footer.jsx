@@ -65,24 +65,6 @@ const Footer = () => {
           </li>
         </div>
 
-        {/*<div className="footerLinks">
-          <span className="linkTitle">
-            Helpful Links
-          </span>
-          <li>
-            <a href='#'>Destination</a>
-          </li>
-          <li>
-            <a href='#'>Conditions</a>
-          </li>
-          <li>
-            <a href='#'>Support</a>
-          </li>
-          <li>
-            <a href='#'>Privacy</a>
-          </li>
-        </div>*/}
-
         <div data-aos="fade-up" data-aos-duration="5000" className="footerLinks">
           <span className="linkTitle">
             Contact Us
