@@ -28,7 +28,7 @@
         .logoDiv {
             /* This style is for the "BONVOYAGE" */
             .logo {
-                color: black;
+                color: white;
                 font-weight: 500;
                 cursor: pointer;
                 align-items: center;
@@ -147,7 +147,7 @@
 
     //This is the style for the header background color when it is Active
     .activeHeader{
-        background: var(--greyText);
+        background: rgb(114, 111, 111);
         box-shadow: 0 2px 8px rgba(66, 53, 53, 0.45);
 
     }
@@ -172,7 +172,7 @@
 
                     .navItem{
                         .navLink{
-                            color: black;
+                            color: white;
                             padding: 0 .45rem;
                             font-weight: 600;
                             font-size: .9rem;
