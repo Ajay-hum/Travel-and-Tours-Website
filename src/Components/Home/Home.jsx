@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import './home.css'
-import video from '../../Assets/video.mp4'
+import video from '../../Assets/Video1.mp4'
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
