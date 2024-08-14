@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import { Link } from 'react-scroll'
 import './footer.css'
 
 import Aos from 'aos'
@@ -43,25 +44,28 @@ const Footer = () => {
 
         <div data-aos="fade-up" data-aos-duration="3000" className="footerLinks">
           <span className="linkTitle">
-            Informations
+            Quick Links & Information
           </span>
           <li>
-            <a href='#'>Home</a>
+            <Link to="home" smooth={true} duration={500} className='navLink'>Home</Link>
           </li>
           <li>
-            <a href='#'>Destination</a>
+            <Link to="main" smooth={true} duration={500} className='navLink'>Packages</Link>
           </li>
           <li>
-            <a href='#'>Packages</a>
+            <Link to="offers" smooth={true} duration={500} className='navLink'>Offers</Link>
           </li>
           <li>
-            <a href='#'>Blog</a>
+            <Link to="blog" smooth={true} duration={500} className='navLink'>Blog</Link>
           </li>
           <li>
-            <a href='#'>Support</a>
+            <Link to="about" smooth={true} duration={500} className='navLink'>About</Link>
           </li>
           <li>
             <a href='#'>Privacy</a>
+          </li>
+          <li>
+            <a href='#'>Support</a>
           </li>
         </div>
 

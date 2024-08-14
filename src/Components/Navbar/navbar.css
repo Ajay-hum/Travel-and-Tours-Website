@@ -76,23 +76,13 @@
     color: rgb(14, 37, 163);
     font-size: 0.9rem;
     font-weight: 600;
+    cursor: pointer;
   }
   .navBarSection .header .navBar .navLists .navItem .navLink:hover {
     color: var(--secondaryColor);
   }
   .navBarSection .header .navBar .navLists .headerBtns {
     flex-direction: column;
-    /*.loginBtn{
-        background: none;
-        border: 1px solid var(--primaryColor);
-
-        a{
-            color: var(--primaryColor);
-        }
-        &:hover{
-            background: var(--HoverColor);
-        }
-    }*/
   }
   .navBarSection .header .navBar .navLists .headerBtns .btn {
     margin-top: 1rem;
@@ -144,6 +134,7 @@
   }
   .navBarSection .header .navBar .navLists .navItem .navLink {
     color: white;
+    cursor: pointer;
     padding: 0 0.45rem;
     font-weight: 600;
     font-size: 0.9rem;

@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import { Link } from 'react-scroll'
 import './home.css'
 import video from '../../Assets/Video1.mp4'
 
@@ -29,7 +30,7 @@ const Home = () => {
             </p>
 
             <button data-aos="fade-up" data-aos-duration="3000" className="btn">
-                <a href="#">Find your Destination</a>
+                <Link to="main" smooth={true} duration={500}>Find your Destination</Link>
             </button>
 
         </div>
@@ -41,8 +42,8 @@ const Home = () => {
             </div>
 
             <div data-aos="fade-right" data-aos-duration="2500" className="distDiv">
-                <label htmlFor="distance">Distance From You:</label>
-                <input type="text" placeholder='5-Kilometers'/>
+                <label htmlFor="distance">Package Type:</label>
+                <input type="text" placeholder='House, Sceneries, Adventures...'/>
             </div>
 
             <div data-aos="fade-right" data-aos-duration="3000" className="priceDiv">

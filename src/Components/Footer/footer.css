@@ -69,6 +69,8 @@
 }
 .footer .secContainer .footerLinks li a {
   color: var(--textColor);
+  cursor: pointer;
+  font-weight: 600;
 }
 .footer .secContainer .footerLinks li a:hover {
   color: var(--secondaryColor);

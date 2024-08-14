@@ -36,7 +36,7 @@ const About = () => {
               <h3 data-aos="fade-right" data-aos-duration="2500">🌄 Explore 1000+ Hiking Adventures! 🌄</h3>
               <p data-aos="fade-right" data-aos-duration="3000">
               Are you ready to embark on your next great adventure? With over 1000 hiking trails to choose from, 
-              there’s something for everyone—from serene nature walks to challenging mountain climbs. Discover breathtaking views, connect with nature, 
+              there's something for everyone—from serene nature walks to challenging mountain climbs. Discover breathtaking views, connect with nature, 
               and create unforgettable memories. Join us and take the first step towards your next hiking journey today!
               </p>
           </div>

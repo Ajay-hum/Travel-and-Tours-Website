@@ -79,6 +79,8 @@
 
                 a{
                     color: var(--textColor);
+                    cursor: pointer;
+                    font-weight: 600;
 
                     &:hover{
                         color: var(--secondaryColor);

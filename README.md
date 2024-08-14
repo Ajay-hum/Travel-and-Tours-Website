@@ -21,6 +21,7 @@ Welcome to the Travel and Tours website! This application allows users to explor
 
 - **React**: For building the user interface
 - **CSS/Styled Components**: For styling the application
+- **AOS**: For effects during User Interaction
 
 ## Installation
 

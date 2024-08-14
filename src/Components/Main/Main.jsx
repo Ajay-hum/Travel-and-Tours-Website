@@ -77,10 +77,10 @@ const Main = () => {
           </div>
         </div>
 
-        <div data-aos="fade-right" data-aos-duration="2500" className="iconsDiv flex">
+        {/*<div data-aos="fade-right" data-aos-duration="2500" className="iconsDiv flex">
           <BsArrowLeftShort className='icon leftIcon' />
           <BsArrowRightShort className='icon' />
-        </div>
+        </div>*/}
 
         <div data-aos="fade-up" data-aos-duration="3000" className="mainContent grid">
           {

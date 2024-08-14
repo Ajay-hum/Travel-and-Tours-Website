@@ -81,6 +81,7 @@
                             color: rgb(14, 37, 163);//Color for the texts in the Navbar
                             font-size: .9rem;
                             font-weight: 600;
+                            cursor: pointer;
                             &:hover {
                                 color: var(--secondaryColor);
                             }
@@ -101,18 +102,6 @@
                                 background: var(--secondaryColor);
                             }
                         }
-
-                        /*.loginBtn{
-                            background: none;
-                            border: 1px solid var(--primaryColor);
-
-                            a{
-                                color: var(--primaryColor);
-                            }
-                            &:hover{
-                                background: var(--HoverColor);
-                            }
-                        }*/
                     }
                 }
                 
@@ -173,6 +162,7 @@
                     .navItem{
                         .navLink{
                             color: white;
+                            cursor: pointer;
                             padding: 0 .45rem;
                             font-weight: 600;
                             font-size: .9rem;
